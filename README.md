@@ -2,7 +2,7 @@
 
 ## CSSOpen Session 2 Lab 1 - Understanding and using Linux service with Azure Linux Agent (waagent)
 
-## Check waagent service status
+## 1.1 Check waagent service status
 
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/1-1.PNG "1-1")<br>
 
@@ -11,7 +11,7 @@
 > sam@samlinux-sa-spoke2-vm1:~$ sudo systemctl status waagent
 > ```
 
-## Stop waagent service and check status
+## 1.2 Stop waagent service and check status
 Stop waagent service
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/2-1.PNG "2-1")<br>
 
@@ -26,7 +26,7 @@ check waagent service service has been already stopped
 > sam@samlinux-sa-spoke2-vm1:~$ sudo systemctl status waagent
 > ```
 
-## Reset password from Azure portal
+## 1.3 Reset password from Azure portal
 Reset password on Azure portal, choose your vm and reset password
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/3-1.png "3-1")<br>
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/3-2.png "3-1")<br>
@@ -48,10 +48,10 @@ Reset password on Azure portal, choose your vm and reset password
 -What’s the action status on portal ?
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/4-1.png "4-2")<br>
 
-## Login again and type the new password
+## 1.4 Login again and type the new password
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/5-1.png "5-1")<br>
 
-## Change to original password in Linux VM
+## 1.5 Change to original password in Linux VM
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/6-1.png "6-1")<br>
 > ```sh
 > sam@samlinux-sa-spoke2-vm1:~$ passwd
@@ -65,5 +65,5 @@ if it does not work you can use this
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/6-1.png "6-2")<br>
 
 ## CSSOpen Session 2 Lab 2 - Mount Azure Nfs share 
-
+## 2.1
 
