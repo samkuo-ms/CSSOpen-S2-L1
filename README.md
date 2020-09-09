@@ -1,5 +1,6 @@
-# CSSOpen-S2-L1 - Understanding and using Linux service with Azure Linux Agent (waagent)
-CSSOpen Session 2 Lab 1 
+# CSSOpen-S2-Lab
+
+## CSSOpen Session 2 Lab 1 - Understanding and using Linux service with Azure Linux Agent (waagent)
 
 ## Check waagent service status
 
@@ -63,6 +64,6 @@ if it does not work you can use this
 > ```
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/6-1.png "6-2")<br>
 
-
+## CSSOpen Session 2 Lab 2 - Mount Azure Nfs share 
 
 
