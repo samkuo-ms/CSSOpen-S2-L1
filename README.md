@@ -64,6 +64,24 @@ if it does not work you can use this
 > ```
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/6-1.png "6-2")<br>
 
-## CSSOpen Session 2 Lab 2 - Mount Azure Nfs share 
-## 2.1
+## CSSOpen Session 2 Lab 2 - Install httpd package for web service
+## 2.1 Install httpd package
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/1-1.png "1-1")<br>
+> ```sh
+> sam@samlinux-sa-spoke2-vm1:~$ yum install httpd
+> ```
+## 2.2 Start httpd service and check status
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/2-1.png "2-1")<br>
+> ```sh
+> sam@samlinux-sa-spoke2-vm1:~$ yum install httpd
+> ```
+## 2.3 Add Web page context in to index.html file
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/3-1.png "3-1")<br>
+> ```sh
+> sam@samlinux-sa-spoke2-vm1:~$ echo 'This is Sam’s EUS VM1.' > /var/www/html/index.html
+> ```
+## 2.4 Open webpage view result
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/4-1.png "4-1")<br>
 
+
+## CSSOpen Session 2 Lab 3 - Mount Azure Nfs share 
