@@ -36,7 +36,7 @@ Reset password on Azure portal, choose your vm and reset password
 -If you try to login to your VM now, does the new password work?
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/3-3.png "3-3")<br>
 
-## Start waagent service
+## 1.4 Start waagent service
 > Check status Command:
 > ```sh
 > sam@samlinux-sa-spoke2-vm1:~$ sudo systemctl start waagent
@@ -48,10 +48,10 @@ Reset password on Azure portal, choose your vm and reset password
 -What’s the action status on portal ?
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/4-1.png "4-2")<br>
 
-## 1.4 Login again and type the new password
+## 1.5 Login again and type the new password
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/5-1.png "5-1")<br>
 
-## 1.5 Change to original password in Linux VM
+## 1.6 Change to original password in Linux VM
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L1-Images/6-1.png "6-1")<br>
 > ```sh
 > sam@samlinux-sa-spoke2-vm1:~$ passwd
@@ -85,3 +85,5 @@ if it does not work you can use this
 
 
 ## CSSOpen Session 2 Lab 3 - Mount Azure Nfs share 
+## 3.1 Mount Blob storage by using the Network File System (NFS) 3.0 protocol (preview)
+[Mount Blob storage by using the Network File System (NFS) 3.0 protocol (preview)](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to?tabs=linux)
