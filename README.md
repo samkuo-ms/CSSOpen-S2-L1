@@ -90,6 +90,22 @@ if it does not work you can use this
 ## CSSOpen Session 2 Lab 3 - Mount Azure Nfs share 
 ## 3.1 Mount Blob storage by using the Network File System (NFS) 3.0 protocol (preview)
 [Mount Blob storage by using the Network File System (NFS) 3.0 protocol (preview)](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to?tabs=linux)
-- 3.1.1 
-
-
+- 3.1.1 Step 1: Register the NFS 3.0 protocol feature with your subscription
+    1.Open a Cloud Shell (PowerShell)command window.
+    2.Register the AllowNFSV3 feature by using the following command.
+> ```ps
+> PS Register-AzProviderFeature -FeatureName AllowNFSV3 -ProviderNamespace Microsoft.Storage 
+> ```
+    3.Register the PremiumHns feature by using the following command as well.
+> ```ps
+> PS Register-AzProviderFeature -FeatureName PremiumHns -ProviderNamespace Microsoft.Storage
+> ```   
+    4.Register the resource provider by using the following command.
+> ```ps
+> PS Register-AzResourceProvider -ProviderNamespace Microsoft.Storage
+> ```  
+- 3.1.2 Verify that the feature is registered
+> ```ps
+> PS Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
+> PS Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName PremiumHns
+> ``` 
