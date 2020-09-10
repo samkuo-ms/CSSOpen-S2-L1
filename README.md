@@ -172,3 +172,40 @@ Create a directory on your Linux system, and then mount a container in the stora
    ```
    nfsiostat  1 30
    ```
+
+## CSSOpen Session 2 Lab 4 - Understanding iptables
+
+## 4.1 Show iptables 
+- 4.1.1 Show iptables Rules
+   ```
+   iptables -L -n --line-numbers
+   ```
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/1-1.png "1-1")<br>  
+- 4.1.2 Open Web page from Browser (Web page is setting from Lab2)
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/1-2.png "1-2")<br>  
+
+## 4.2 Add iptables Rules
+- 4.2.1 Add Rules 
+   ```
+   iptables -A INPUT -s 220.137.58.109 -p tcp --dport 80 -j DROP
+   iptables -A INPUT -s 220.137.58.109 -p tcp --dport 443 -j DROP
+   iptables -A INPUT -s 220.137.58.109 -p tcp --dport 8443 -j DROP
+   ```
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/2-1.png "2-1")<br>  
+- 4.2.1 show iptables Rules 
+   ```
+   iptables -L -n --line-numbers
+   ```
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/2-2.png "2-2")<br>  
+## 4.3 Open Web page from Browser 
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/3-1.png "3-1")<br>  
+   
+## 4.4 Delete iptables Rules
+   - 4.4.1 Delete Rules 
+   ```
+   iptables -D INPUT 1
+   iptables -L -n --line-numbers
+   ```
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/4-1.png "4-1")<br>  
+## 4.5 Open Web page from Browser 
+   > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L4-Images/5-1.png "5-1")<br>  
