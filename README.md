@@ -109,3 +109,17 @@ if it does not work you can use this
 > PS Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
 > PS Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName PremiumHns
 > ``` 
+- 3.1.3 Create and configure a storage account
+As you configure the account, choose these values:
+In the preview release of this feature, NFS 3.0 protocol is supported only in [BlockBlobStorage](../blobs/storage-blob-create-account-block-blob.md) accounts.
+|Setting | Value|
+|----|---|
+|Location|One of the following regions: US East, US Central, US West Central, Australia Southeast, North Europe, UK West, Korea Central, Korea South, and Canada Central |
+|Performance|Premium|
+|Account kind|BlockBlobStorage|
+|Replication|Locally-redundant storage (LRS)|
+|Connectivity method|Public endpoint (selected networks) or Private endpoint|
+|Secure transfer required|Disabled|
+|Hierarchical namespace|Enabled|
+|NFS V3|Enabled|
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/3-1.png "3-1")<br>
