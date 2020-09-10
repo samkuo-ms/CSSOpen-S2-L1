@@ -112,6 +112,9 @@ if it does not work you can use this
 - 3.1.3 Create and configure a storage account
 As you configure the account, choose these values:
 In the preview release of this feature, NFS 3.0 protocol is supported only in [BlockBlobStorage](../blobs/storage-blob-create-account-block-blob.md) accounts.
+> [!NOTE]
+> NFS 3.0 protocol support in Azure Blob storage is in public preview and is available in the following regions: US East, US Central, US West Central, Australia Southeast, North Europe, UK West, Korea Central, Korea South, and Canada Central.
+
 |Setting | Value|
 |----|---|
 |Location|One of the following regions: US East, US Central, US West Central, Australia Southeast, North Europe, UK West, Korea Central, Korea South, and Canada Central |
