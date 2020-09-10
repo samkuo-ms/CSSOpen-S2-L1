@@ -137,9 +137,14 @@ Create a directory on your Linux system, and then mount a container in the stora
 1. On a Linux system, create a directory.
 
    ```
-   mkdir -p /mnt/test
+   ll -d /mnt/test
    ```
-
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-5.png "1-5")<br>   
+   ```
+   mkdir -p /mnt/test
+   ll -d /mnt/test
+   ```
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-6.png "1-6")<br>  
 2. Mount a container by using the following command.
 
    ```
@@ -149,6 +154,11 @@ Create a directory on your Linux system, and then mount a container in the stora
    - Replace the `<storage-account-name>` placeholder that appears in this command with the name of your storage account.  
 
    - Replace the `<container-name>` placeholder with the name of your container.
-### [ ](#tab/na)
+   
+   Check mount status OK
+   ```
+   df -h
+   ```
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-6.png "1-6")<br>  
 ---
-
+- 3.1.6 Check 
