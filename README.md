@@ -131,7 +131,7 @@ In the preview release of this feature, NFS 3.0 protocol is supported only in [B
 - 3.1.4 Create a container
 > ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-4.png "1-4")<br>
 - 3.1.5 Mount the container
-Create a directory on your Windows or Linux system, and then mount a container in the storage account.
+Create a directory on your Linux system, and then mount a container in the storage account.
 ### [Linux](#tab/linux)
 
 1. On a Linux system, create a directory.
@@ -149,6 +149,6 @@ Create a directory on your Windows or Linux system, and then mount a container i
    - Replace the `<storage-account-name>` placeholder that appears in this command with the name of your storage account.  
 
    - Replace the `<container-name>` placeholder with the name of your container.
-
+### [ ](#tab/na)
 ---
 
