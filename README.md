@@ -125,4 +125,30 @@ In the preview release of this feature, NFS 3.0 protocol is supported only in [B
 |Secure transfer required|Disabled|
 |Hierarchical namespace|Enabled|
 |NFS V3|Enabled|
-> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L2-Images/3-1.png "3-1")<br>
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-1.png "1-1")<br>
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-2.png "1-2")<br>
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-2.png "1-3")<br>
+- 3.1.4 Create a container
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-2.png "1-4")<br>
+- 3.1.5 Mount the container
+Create a directory on your Windows or Linux system, and then mount a container in the storage account.
+### [Linux](#tab/linux)
+
+1. On a Linux system, create a directory.
+
+   ```
+   mkdir -p /mnt/test
+   ```
+
+2. Mount a container by using the following command.
+
+   ```
+   mount -o sec=sys,vers=3,nolock,proto=tcp <storage-account-name>.blob.core.windows.net:/<storage-account-name>/<container-name>  /mnt/test
+   ```
+
+   - Replace the `<storage-account-name>` placeholder that appears in this command with the name of your storage account.  
+
+   - Replace the `<container-name>` placeholder with the name of your container.
+
+
+
