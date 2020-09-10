@@ -134,7 +134,7 @@ In the preview release of this feature, NFS 3.0 protocol is supported only in [B
 Create a directory on your Linux system, and then mount a container in the storage account.
 ### [Linux](#tab/linux)
 
-1. On a Linux system, create a directory.
+1. On a Linux system, check directory is not exist and then create a directory.
 
    ```
    ll -d /mnt/test
@@ -159,6 +159,16 @@ Create a directory on your Linux system, and then mount a container in the stora
    ```
    df -h
    ```
-> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-6.png "1-6")<br>  
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-7.png "1-7")<br>  
 ---
-- 3.1.6 Check 
+- 3.1.6 NFS performance test
+   Check mount status OK
+   ```
+   dd if=/dev/zero of=/mnt/test/test.img bs=50M count=1 oflag=dsync
+   ```
+> ![GITGUB](https://github.com/samkuo-ms/CSSOpen-S2-L1/blob/master/CSSOpen-S2-L3-Images/1-8.png "1-8")<br>  
+
+   Monitor by another ssh session
+   ```
+   nfsiostat  1 30
+   ```
